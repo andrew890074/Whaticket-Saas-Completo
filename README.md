@@ -16,6 +16,7 @@ apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Whaticket
 
 ## Principais Funcionalidades
 
+- 🔊 <strong>Transcrever Áudios:<strong> Converta áudios recebidos em texto.<br><br>
 - 🌟 <strong>Atendimento Organizado:<strong> Adicione vários atendentes e defina por setores para uma gestão organizada.<br><br>
 - 📲 <strong>Adicionar Participantes:<strong> Integre novos participantes facilmente em conversas existentes.<br><br>
 - 📢 <strong>Campanhas Personalizadas:<strong> Crie campanhas com agendamento e utilize variáveis para comunicações personalizadas.<br><br>
@@ -48,6 +49,8 @@ apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Whaticket
 
 ![GIF](demonstração/transcrição.gif)
 
-![GIF](demonstração/video2.gif)
-
 ![GIF](demonstração/video1.gif)
+
+![GIF](demonstração/api.gif)
+
+![GIF](demonstração/video2.gif)
