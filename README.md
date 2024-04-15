@@ -46,6 +46,8 @@ apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Whaticket
 
 <h1>Demonstração</h1>
 
+![GIF](demonstração/transcrição.gif)
+
 ![GIF](demonstração/video2.gif)
 
 ![GIF](demonstração/video1.gif)
