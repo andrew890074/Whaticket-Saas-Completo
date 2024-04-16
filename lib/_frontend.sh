@@ -154,14 +154,15 @@ move_whaticket_files() {
   sudo rm -r /home/deployautomatizaai/whaticket/frontend/package.json
   sudo rm -r /home/deployautomatizaai/whaticket/backend/automatizaai
   sudo rm -r /home/deployautomatizaai/whaticket/backend/package.json
-  rm -rf /home/deployautomatizaai/whaticket/frontend/node_modules
-  rm -rf /home/deployautomatizaai/whaticket/backend/node_modules
+  sudo rm -rf /home/deployautomatizaai/whaticket/frontend/node_modules
+  sudo rm -rf /home/deployautomatizaai/whaticket/backend/node_modules
 
   sudo mv /root/whaticket/frontend/automatizaai /home/deployautomatizaai/whaticket/frontend
   sudo mv /root/whaticket/frontend/package.json /home/deployautomatizaai/whaticket/frontend
   sudo mv /root/whaticket/backend/automatizaai /home/deployautomatizaai/whaticket/backend
   sudo mv /root/whaticket/backend/package.json /home/deployautomatizaai/whaticket/backend
-  rm -rf /root/whaticket
+  sudo mv /root/whaticket/backend/automatizaai/public/company1/1713287704144_55.png /home/deployautomatizaai/whaticket/backend/public/company1/1713287704144_55.png
+  sudo rm -rf /root/whaticket
 
 EOF
   sleep 2
@@ -272,7 +273,7 @@ backend_restart_pm2() {
   cd /home/deployautomatizaai/whaticket/backend
   pm2 stop all
   pm2 start all
-  rm -rf /root/Whaticket-Saas-Completo
+  sudo rm -rf /root/Whaticket-Saas-Completo
 EOF
 
   sleep 2
