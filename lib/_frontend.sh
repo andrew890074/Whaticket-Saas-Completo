@@ -161,8 +161,9 @@ move_whaticket_files() {
   sudo mv /root/whaticket/frontend/package.json /home/deployautomatizaai/whaticket/frontend
   sudo mv /root/whaticket/backend/automatizaai /home/deployautomatizaai/whaticket/backend
   sudo mv /root/whaticket/backend/package.json /home/deployautomatizaai/whaticket/backend
-  sudo mv /root/whaticket/backend/automatizaai/public/company1/1713287704144_55.png /home/deployautomatizaai/whaticket/backend/public/company1/1713287704144_55.png
   sudo rm -rf /root/whaticket
+  sudo apt update
+  sudo apt install ffmpeg
 
 EOF
   sleep 2

@@ -342,6 +342,8 @@ system_nginx_install() {
   sudo su - root <<EOF
   apt install -y nginx
   rm /etc/nginx/sites-enabled/default
+  sudo apt update
+  sudo apt install ffmpeg
 EOF
 
   sleep 2
