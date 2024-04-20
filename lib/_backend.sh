@@ -51,7 +51,7 @@ NODE_ENV=
 
 # VARIÁVEIS DE SISTEMA
 BACKEND_URL=${backend_url}
-FRONTEND_URL=${frontend_url}
+ALLOWED_ORIGINS=${frontend_url}
 PROXY_PORT=443
 PORT=8080
 
