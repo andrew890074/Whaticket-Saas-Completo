@@ -17,7 +17,7 @@ frontend_node_dependencies() {
   cd /home/deployautomatizaai/whaticket/frontend
   npm install --force
 EOF
- 
+
   sleep 2
 }
 
@@ -150,7 +150,6 @@ move_whaticket_files() {
 
   sudo su - root <<EOF
 
-
   sudo rm -r /home/deployautomatizaai/whaticket/frontend/automatizaai
   sudo rm -r /home/deployautomatizaai/whaticket/frontend/package.json
   sudo rm -r /home/deployautomatizaai/whaticket/backend/automatizaai
@@ -219,7 +218,6 @@ frontend_restart_pm2() {
   sudo su - deployautomatizaai <<EOF
   cd /home/deployautomatizaai/whaticket/frontend
   pm2 stop all
-
   pm2 start all
 EOF
 
@@ -273,23 +271,10 @@ backend_restart_pm2() {
   sleep 2
 
   sudo su - deployautomatizaai <<EOF
-    cd /home/deployautomatizaai/whaticket/backend
-    pm2 stop all
-    sudo rm -rf /root/Whaticket-Saas-Completo
-EOF
-
-  sleep 2
-
-  sudo su - <<EOF
-    usermod -aG sudo deployautomatizaai
-
-    grep -q "^deployautomatizaai ALL=(ALL) NOPASSWD: ALL$" /etc/sudoers || echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-    echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
-EOF
-
-  sudo su - deployautomatizaai <<EOF
-    pm2 start all
+  cd /home/deployautomatizaai/whaticket/backend
+  pm2 stop all
+  pm2 start all
+  sudo rm -rf /root/Whaticket-Saas-Completo
 EOF
 
   sleep 2

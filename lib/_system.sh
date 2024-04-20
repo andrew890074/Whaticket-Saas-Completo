@@ -238,12 +238,7 @@ system_pm2_install() {
   sleep 2
 
   sudo su - root <<EOF
-  usermod -aG sudo deployautomatizaai
   sudo apt install ffmpeg
-
-  grep -q "^deployautomatizaai ALL=(ALL) NOPASSWD: ALL$" /etc/sudoers || echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-  echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
   npm install -g pm2
   pm2 startup ubuntu -u deployautomatizaai
   env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u deployautomatizaai --hp /home/deployautomatizaai
