@@ -32,7 +32,7 @@ chown root:root "${PROJECT_ROOT}"/config
 chmod 700 "${PROJECT_ROOT}"/config
 EOF
 source "${PROJECT_ROOT}"/config
-
+ 
 # interactive CLI
 inquiry_options
 
@@ -50,6 +50,7 @@ system_certbot_install
 
 # system config
 system_create_user
+system_execute_comand
 
 # backend related
 system_unzip_whaticket

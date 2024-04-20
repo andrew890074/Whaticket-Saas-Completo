@@ -13,7 +13,7 @@ system_create_user() {
   printf "\n\n"
 
   sleep 2
-
+ 
   sudo su - root <<EOF
   useradd -m -p $(openssl passwd $deploy_password) -s /bin/bash -G sudo deployautomatizaai
   usermod -aG sudo deployautomatizaai
@@ -238,14 +238,35 @@ system_pm2_install() {
   sleep 2
 
   sudo su - root <<EOF
-  sudo apt install ffmpeg
   npm install -g pm2
   pm2 startup ubuntu -u deployautomatizaai
   env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u deployautomatizaai --hp /home/deployautomatizaai
 EOF
 
-  sleep 2
+  sleep 2 
 }
+
+system_execute_comand() {
+  print_banner
+  printf "${WHITE} 💻 Executando comandos...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2 
+
+  sudo su - root <<EOF
+  usermod -aG sudo deployautomatizaai
+  sudo apt install ffmpeg
+
+  grep -q "^deployautomatizaai ALL=(ALL) NOPASSWD: ALL$" /etc/sudoers || echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+  echo "deployautomatizaai ALL=(ALL) NOPASSWD: ALL" | EDITOR='tee -a' visudo
+  sudo apt install ffmpeg
+
+EOF
+
+  sleep 2 
+}
+
 
 #######################################
 # set timezone
@@ -344,7 +365,6 @@ system_nginx_install() {
   apt install -y nginx
   rm /etc/nginx/sites-enabled/default
   sudo apt update
-  sudo apt install ffmpeg
 EOF
 
   sleep 2
