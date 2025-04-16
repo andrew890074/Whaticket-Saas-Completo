@@ -1,5 +1,4 @@
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/fluxo5.png)
-<br/>
+ 
 <br/>
 
 <h1>Whaticket Saas</h1>
@@ -9,43 +8,34 @@
 <p>Ubuntu 22.04</p>
 
 
-<code>apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Connect.AI && sudo git clone https://github.com/andrew890074/Whaticket-Saas-Completo.git && cd Connect.AI && sudo chmod +x ./devconnectai && ./devconnectai</code><br />
-
-
-
-<h3>Atualização</h3>
-
-<code>wget -qO- up.devconnectai.com.br/up.sh | bash</code><br />
+<code>apt update && apt upgrade -y && apt install sudo git -y && sudo rm -rf Connect.AI && sudo git clone https://github.com/andrew890074/Connect.AI.git && cd Connect.AI && sudo chmod +x ./devconnectai && ./devconnectai</code><br />
 &nbsp;</p>
-
-
+ 
 <h3>Whatsapp Suporte: +55 (51) 9957-9150<h3>
 
-<h3>Grupo de Suporte: https://encurtador.com.br/Q9Yl5<h3>
+ 
 <br/>
 
 <h1>Demonstração</h1>
 
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/tela2.png)
+![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img1.png)
 
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/tela3.png)
+![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img2.png)
 
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/flow2.png)
+![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img3.png)
 
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/conexao.png)
 
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/campanha.jpeg)
+![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img4.png)
 
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/user.png)
+![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img5.png)
 
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/importar.png)
-
-![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/install.png)
+![link About do site](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img6.png)
+ 
 
 ## Principais Funcionalidades
-
+- 🧩 <strong>Construtor de Fluxos com mais de 40 funcionalidades:<strong> Automatize processos com nós visuais, simulador ao vivo, integrações e IA.<br><br>
+- 🔁 <strong>FlowUp Inteligente:<strong> Automatize sequências de mensagens com múltiplos passos personalizados para cada tipo de cliente.<br><br>
 - 🤖 <strong>Palavra-Chave:<strong> Ative e alterne entre fluxos automaticamente utilizando palavras-chave.<br><br>
-- 🤖 <strong>Chatbot Inteligente:<strong> Configure seu chatbot por setor para respostas automatizadas.<br><br>
 - 🔗 <strong>Integração Com Sites:<strong> Monitore em tempo real e receba notificações instantâneas sobre os acessos ao seu site! <br><br>
 - 🔗 <strong>Integração Pixel Facebook:<strong> Acompanhe e registre conversões com o pixel do Facebook. <br><br>
 - 🔗 <strong>Integração Webhook:<strong> Utilize webhooks para conectar com outros sistemas e automatizar processos. <br><br>
