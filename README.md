@@ -14,9 +14,9 @@ Bem-vindo ao repositório oficial do ConnectAI, a solução definitiva para otim
 
 Precisa de ajuda ou tem alguma dúvida? Entre em contato com nossa equipe de suporte via WhatsApp:
 
-**+55 (51) 9957-9150**
+##**+55 (51) 9957-9150**
 
-Estamos prontos para te ajudar a tirar o máximo proveito do Whaticket Saas!
+Estamos prontos para te ajudar!
 
  
  
