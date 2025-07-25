@@ -6,7 +6,7 @@
 ![Interface do ConnectAI - Imagem 5](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img5.png)
 ![Interface do ConnectAI - Imagem 6](https://github.com/andrew890074/Connect.AI/blob/main/demonstração/img6.png)
 
-# 🚀 ConnectAI: Sua Plataforma Completa de Atendimento Inteligente!
+# 🚀 ConnectAI: Sua Plataforma Completa de Atendimento Inteligente!!
 
 Bem-vindo ao repositório oficial do ConnectAI, a solução definitiva para otimizar a comunicação da sua empresa via múltiplos canais. Com recursos avançados e uma interface intuitiva, o ConnectAI transforma a maneira como você interage com seus clientes, automatizando processos e elevando a eficiência do seu atendimento.
 
